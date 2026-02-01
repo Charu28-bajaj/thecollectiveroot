@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0D1B2A;
+  --foreground: #F5F5F5;
+  --primary: #0D1B2A;
+  --secondary: #111C2D;
+  --gold: #FFD700;
+  --accent-gold: #C9A227;
+  --text-light: #F5F5F5;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: brightness(1.15) saturate(0.65);
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(13, 27, 42, 0.8) 0%,
+    rgba(17, 28, 45, 0.75) 50%,
+    rgba(13, 27, 42, 0.8) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
