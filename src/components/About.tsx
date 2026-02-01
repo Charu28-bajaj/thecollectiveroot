@@ -27,22 +27,22 @@ export function About() {
               Professional Profile
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-light text-light">
-              About the collective root
+              About Ritu Bhargava
             </h2>
           </div>
           <p className="text-light/90 text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl">
-            The collective root brings nearly a decade of strategic market
+            Ritu Bhargava brings nearly a decade of strategic market
             research and business intelligence expertise to global enterprises.
-            With a foundation in engineering (BTech) and management (MBA), it has
+            With a foundation in engineering (BTech) and management (MBA), she has
             advised leading organizations—including Fortune 500 clients such as
             Google—on market dynamics, growth strategy, and data-driven decision
             frameworks.
           </p>
           <p className="text-light/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
-            Its work spans business intelligence, decision science, and growth
+            Her work spans business intelligence, decision science, and growth
             strategy across multinational markets, with a distinctive focus on
             cross-functional alignment, stakeholder capitalism, and sustainable
-            value creation. It champions empathetic leadership, systems
+            value creation. She champions empathetic leadership, systems
             thinking, and responsible innovation as cornerstones of
             organizational resilience and long-term human progress.
           </p>
